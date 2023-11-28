@@ -11,18 +11,28 @@ public abstract class Pessoa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @Column(length = 100)
     private String nome;
+    @Column(length = 70)
     private String endereco;
+    @Column(length = 9)
     private String cep;
+    @Column(length = 70)
     private String bairro;
+    @Column(length = 70)
     private String cidade;
+    @Column(length = 2)
     private String UF;
+    @Column(length = 50)
     private String email;
+    @Column(length = 15)
     private String telefone;
 
     @Column(name = "data_nascimento")
     private Date dataNascimento;
+    @Column(length = 9)
     private String rg;
+    @Column(length = 14)
     private String cpf;
 
     public Pessoa() { }
@@ -51,6 +61,14 @@ public abstract class Pessoa {
         this.dataNascimento = dataNascimento;
         this.rg = rg;
         this.cpf = cpf;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getNome() {
