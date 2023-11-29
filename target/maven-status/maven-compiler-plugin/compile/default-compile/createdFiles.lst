@@ -1,1 +1,8 @@
+com\guilherme\hotel\dto\UsuarioDTO.class
+com\guilherme\hotel\entities\Role.class
+com\guilherme\hotel\repositories\RoleRepository.class
+com\guilherme\hotel\controllers\UsuarioController.class
+com\guilherme\hotel\repositories\UsuarioRepository.class
+com\guilherme\hotel\services\CustomUserDetailsService.class
+com\guilherme\hotel\services\UsuarioService.class
 com\guilherme\hotel\HotelApplication.class
